@@ -1,0 +1,39 @@
+.get-started-button {
+    position: relative;       
+    width: 250px;       
+    height: 70px;    
+    margin-top: 60px; 
+    margin-left: 460px;                   
+    padding: 10px 30px 10px 20px;        
+    font-size: 23px;                    
+    background-color: #d19a66;         
+    color: #150B03;                      
+    border: 3px solid #ffffff;           
+    border-radius: 5px;                  
+    cursor: pointer;                     
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    animation: pulse 1.5s infinite;      
+    box-shadow: 0 4px 15px rgb(116, 86, 57);
+  }
+  
+  .get-started-button::after {
+    content: '➤';                       
+    font-size: 25px;                 
+    position: absolute;              
+    right: 10px;                       
+    top: 50%;                         
+    transform: translateY(-50%);       
+    transition: transform 0.3s ease, content 0.3s ease; 
+  }
+  
+  .get-started-button:hover {
+    animation: none;                   
+    background-color: #cda78b;         
+    box-shadow: 0 8px 30px rgb(116, 86, 57); 
+    border: 3px solid #d19a66;         
+  }
+  
+  .get-started-button:hover::after {
+    content: '➤';                    
+    transform: translateX(10px) translateY(-50%); 
+  }

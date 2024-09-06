@@ -1,0 +1,17 @@
+.video-container {
+    margin-top: 2px;
+    position: relative;
+  }
+  
+  .background-video {
+    width: 100%;
+  }
+
+
+@media(max-width:500px){
+  .background-video{
+    margin-top: 60px;
+  }
+}
+  
+  
